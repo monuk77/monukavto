@@ -1,0 +1,10 @@
+{
+  "name": "car-marketplace-mvp",
+  "version": "1.0.0",
+  "description": "MVP for buying and selling cars",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {}
+}

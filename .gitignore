@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monukstore Auto — Покупка и продажа автомобилей</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Monukstore Auto</div>
+    <nav class="main-nav">
+      <a href="#home" class="nav-link">Главная</a>
+      <a href="#catalog" class="nav-link">Каталог</a>
+      <a href="#store" class="nav-link">О магазине</a>
+      <a href="#contacts" class="nav-link">Контакты</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section id="home" class="page active">
+      <div class="hero">
+        <h1>Покупка и продажа автомобилей онлайн</h1>
+        <p>Купить или продать автомобиль легко и быстро. Оставайтесь на связи с покупателями и продавцами.</p>
+        <button class="btn" data-action="gotoCatalog">Перейти к каталогу</button>
+      </div>
+      <section class="gallery" id="home-gallery"></section>
+    </section>
+
+    <section id="catalog" class="page">
+      <h2>Каталог автомобилей</h2>
+      
+      <div class="filter-bar">
+        <select id="filter-make">
+          <option value="">Все марки</option>
+        </select>
+        <input type="text" id="search-model" placeholder="Поиск по модели..." />
+        <div class="range-group">
+          <input type="number" id="year-min" placeholder="Год от" />
+          <input type="number" id="year-max" placeholder="до" />
+        </div>
+        <div class="range-group">
+          <input type="number" id="price-min" placeholder="Цена от" />
+          <input type="number" id="price-max" placeholder="до" />
+        </div>
+        <button id="clear-filters" class="btn btn-secondary">Сбросить</button>
+      </div>
+
+      <div id="catalog-grid" class="grid"></div>
+      <button class="btn" data-action="openLeadModal">Оставить заявку</button>
+    </section>
+
+    <section id="store" class="page">
+      <h2>О магазине</h2>
+      <p>Monukstore Auto предоставляет площадку для покупок и продаж автомобилей. Мы помогаем продавцам размещать объявления и обеспечиваем безопасные сделки.</p>
+    </section>
+
+    <section id="contacts" class="page">
+      <h2>Контакты</h2>
+      <p>Телефон: +79279484874</p>
+      <p>Email: d.a.v.motors77@gmail.com</p>
+    </section>
+  </main>
+
+  <div id="lead-modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <span class="close" data-action="closeLeadModal">×</span>
+      <h3>Оставьте заявку</h3>
+      <form id="lead-form" onsubmit="return submitLead(event)">
+        <label>ФИО<input type="text" id="lead-name" required /></label>
+        <label>Телефон<input type="tel" id="lead-phone" required placeholder="+7 (___) ___-__-__" /></label>
+        <button class="btn" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer" style="text-align:center; padding:20px;">© 2026 Monukstore Auto</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
