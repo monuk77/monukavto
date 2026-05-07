@@ -1,7 +1,7 @@
 const cars = [
   { id: 1, make: 'Toyota', model: 'Camry', year: 2020, price: '2 100 000', image: 'https://images.unsplash.com/photo-1621007947382-bb3c3997f06c?auto=//format&fit=crop&w=600&q=80' },
-  { id: 2, make: 'Tesla', model: 'Model 3', year: 2021, price: '3 800 000', image: 'https://images.unsplash.com/photo-1560958089-b8a1929//format&fit=crop&w=600&q=80' },
-  { id: 3, make: 'Mercedes', model: 'E-Class', year: 2019, price: '3 200 000', image: 'https://images.unsplash.com/photo-1618843479337-c básicamente-u-car-merc?auto=//format&fit=crop&w=600&q=80' },
+  { id: 2, make: 'Tesla', model: 'Model 3', year: 2021, price: '3 800 000', image: 'https://images.unsplash.com/photo-1560958089-b8a19297335e?auto=format&fit=crop&w=600&q=80' },
+  { id: 3, make: 'Mercedes', model: 'E-Class', year: 2019, price: '3 200 000', image: 'https://images.unsplash.com/photo-1618843479337-c5765336a608?auto=format&fit=crop&w=600&q=80' },
   { id: 4, make: 'BMW', model: 'M5', year: 2022, price: '7 500 000', image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=//format&fit=crop&w=600&q=80' },
   { id: 5, make: 'Audi', model: 'Q7', year: 2018, price: '4 100 000', image: 'https://images.unsplash.com/photo-1541899481276-f7745753847b?auto=//format&fit=crop&w=600&q=80' },
   { id: 6, make: 'Porsche', model: '911', year: 2023, price: '12 000 000', image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=//format&fit=crop&w=600&q=80' },
