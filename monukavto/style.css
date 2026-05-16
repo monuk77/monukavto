@@ -31,6 +31,16 @@ body {
 .brand { font-size: 1.5rem; font-weight: 800; color: var(--accent); }
 .main-nav a { color: #fff; text-decoration: none; margin-left: 20px; font-weight: 500; transition: 0.3s; }
 .main-nav a:hover { color: var(--accent); }
+.main-nav .btn-sell {
+  background: var(--accent);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 50px;
+}
+.main-nav .btn-sell:hover {
+  background: var(--accent-hover);
+  color: white;
+}
 
 .hero { 
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=//format&fit=crop&w=1600&q=80');
@@ -117,4 +127,23 @@ body {
   border-radius: 8px; 
   font-size: 1rem; 
 }
+
+.sell-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.sell-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sell-form .btn {
+  margin-top: 1rem;
+}
+
 .footer { background: #111; color: #fff; text-align: center; padding: 2rem; }
