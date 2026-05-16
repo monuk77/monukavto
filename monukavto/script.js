@@ -61,4 +61,23 @@ document.addEventListener('DOMContentLoaded', () => {
       leadForm.reset();
     };
   }
+
+  const sellForm = document.getElementById('sell-form');
+  if (sellForm) {
+    sellForm.onsubmit = (e) => {
+      e.preventDefault();
+      const car = document.getElementById('sell-car').value;
+      const year = document.getElementById('sell-year').value;
+      const price = document.getElementById('sell-price').value;
+      const name = document.getElementById('sell-name').value;
+      const phone = document.getElementById('sell-phone').value;
+      
+      const sellLeads = JSON.parse(localStorage.getItem('car_sell_leads') || '[]');
+      sellLeads.push({ car, year, price, name, phone, date: new Date().toISOString() });
+      localStorage.setItem('car_sell_leads', JSON.stringify(sellLeads));
+      
+      alert('Спасибо! Ваша заявка на продажу принята. Мы свяжемся с вами в ближайшее время для обсуждения деталей.');
+      sellForm.reset();
+    };
+  }
 });
